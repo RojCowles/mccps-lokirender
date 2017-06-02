@@ -1,7 +1,7 @@
-FROM ubuntu:latest
+FROM debian:stable
 
 RUN apt-get update -y && \
-    apt-get install -y wget bzip2 openjdk-8-jre-headless blender
+    apt-get install -y wget bzip2 openjdk-7-jre blender
 
 WORKDIR /lokirender
 
